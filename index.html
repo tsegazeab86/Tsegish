@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="en">
+  <!-- url:universal resource locater -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/WebSitepage/images/tsemk.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="spinner"></div>
+    </div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Header start here -->
+    <header class="header">
+      <div class="container">
+        <div class="logo-wrapper">
+          <a href="# " target="_blank" class="logo">
+            <div class="logo-inner">
+              <span class="logo-char t">T</span
+              ><span class="logo-char s">S</span
+              ><span class="logo-char e">E</span
+              ><span class="logo-char g">G</span
+              ><span class="logo-char a">A</span
+              ><span class="logo-char y">Y</span
+              ><span class="logo-char e">E</span>
+            </div>
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </div>
+      </div>
+    </header>
+    <!-- header end here -->
+
+    <main class="main-content">
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-image">
+            <img
+              src="/WebSitepage/images/tsemk.jpg"
+              alt="Tsegaye"
+              loading="eager"
+            />
+          </div>
+          <div class="hero-content">
+            <h1>I'm Tsegaye</h1>
+            <h3>3rd Year CS Student in Injibara University</h3>
+            <p class="typed-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About start -->
+      <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-container reveal">
+          <div class="about-img">
+            <img
+              src="/WebSitepage/images/waw.png"
+              alt="coding"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text">
+            <p>
+              I am <strong style="color: #00d4ff">Tsegaye</strong>, a 3rd-year
+              Computer Science student at Injibara University, Ethiopia. My
+              journey into tech began with a simple curiosity about how websites
+              work, and it quickly grew into a burning passion for creating
+              digital experiences that are both functional and beautiful.
+            </p>
+            <p>
+              Currently, I am focused on becoming a
+              <strong>front-end web developer</strong>. I spend most of my time
+              building projects with HTML, CSS, JavaScript, and beyond. I also
+              enjoy experimenting with new tools and frameworks. Beyond coding,
+              I love solving problems, collaborating with peers, and
+              contributing to open source.
+            </p>
+            <div class="about-info">
+              <div class="info-item"><span>3+</span>Projects</div>
+              <div class="info-item"><span>3rd</span>Year Student</div>
+              <div class="info-item"><span>Front-end</span>In Training</div>
+              <div class="info-item"><span>Always</span>Learning</div>
+              <div class="info-item" id="about-contact">
+                <a href="#contact">Get in touch</a>
+              </div>
+              <div class="info-item" id="about-work">
+                <a href="#projects">View work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- Skills start -->
+      <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid reveal">
+          <div class="skill-item" style="--percent: 90%">
+            <div class="skill-info">
+              <span>HTML & CSS</span><span>60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skill-item" style="--percent: 55%">
+            <div class="skill-info">
+              <span>JavaScript</span><span>55%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 55%"></div>
+            </div>
+          </div>
+          <div class="skill-item" style="--percent: 50%">
+            <div class="skill-info"><span>React</span><span>50%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+          </div>
+          <div class="skill-item" style="--percent: 75%">
+            <div class="skill-info"><span>Node.js</span><span>45%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item" style="--percent: 60%">
+            <div class="skill-info"><span>Python</span><span>60%</span></div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects (with lazy loading images) -->
+      <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid reveal">
+          <div class="project-card" data-project="calc">
+            <img
+              src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=400&h=200&fit=crop"
+              alt="Calculator"
+              class="project-img"
+              loading="lazy"
+            />
+            <div class="project-info">
+              <h3>Simple Calculator</h3>
+              <p>Basic arithmetic operations, responsive.</p>
+              <div class="project-links">
+                <a href="/WebSitepage/calculator/calculater.html">live demo</a>
+                <a href="#" class="more-info-link" data-project="calc"
+                  >More info</a
+                >
+              </div>
+            </div>
+            <div class="project-full-details">
+              <div class="full-title">Simple Calculator</div>
+              <div class="full-description">
+                A clean, responsive calculator built with HTML, CSS, and
+                JavaScript. Performs basic arithmetic operations (+, -, ×, ÷)
+                and features a modern dark interface. Keyboard support included.
+              </div>
+              <div class="full-tech">HTML, CSS, JavaScript</div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="cal">
+            <img
+              src="https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&h=200&fit=crop"
+              alt="Calendar"
+              class="project-img"
+              loading="lazy"
+            />
+            <div class="project-info">
+              <h3>Calendar</h3>
+              <p>Interactive calendar with event highlighting.</p>
+              <div class="project-links">
+                <a href="/WebSitepage/Calender/calender.html">live demo</a>
+                <a href="#" class="more-info-link" data-project="cal"
+                  >More info</a
+                >
+              </div>
+            </div>
+            <div class="project-full-details">
+              <div class="full-title">Interactive Calendar</div>
+              <div class="full-description">
+                A dynamic calendar that displays current month, allows
+                navigation between months, and highlights important dates. Users
+                can add simple event markers. Built with vanilla JavaScript.
+              </div>
+              <div class="full-tech">HTML, CSS, JavaScript, Date API</div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="music">
+            <img
+              src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&h=200&fit=crop"
+              alt="Music Player"
+              class="project-img"
+              loading="lazy"
+            />
+            <div class="project-info">
+              <h3>Music Player</h3>
+              <p>Custom audio player with playlist.</p>
+              <div class="project-links">
+                <a href="/WebSitepage/music/music.html">live demo</a>
+                <a href="#" class="more-info-link" data-project="music"
+                  >More info</a
+                >
+              </div>
+            </div>
+            <div class="project-full-details">
+              <div class="full-title">Custom Music Player</div>
+              <div class="full-description">
+                A sleek audio player with play/pause, skip, volume control, and
+                a dynamic playlist. Visualizer effects and responsive design.
+                Built with HTML5 audio API.
+              </div>
+              <div class="full-tech">HTML, CSS, JavaScript, Audio API</div>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="snake">
+            <img
+              src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=200&fit=crop"
+              alt="Snake Game"
+              class="project-img"
+              loading="lazy"
+            />
+            <div class="project-info">
+              <h3>Snake Game</h3>
+              <p>Classic snake game with HTML5 Canvas.</p>
+              <div class="project-links">
+                <a href="/WebSitepage/Snakegame/index.html">live demo</a>
+                <a href="#" class="more-info-link" data-project="snake"
+                  >More info</a
+                >
+              </div>
+            </div>
+            <div class="project-full-details">
+              <div class="full-title">Snake Game</div>
+              <div class="full-description">
+                The classic snake game: control the snake, eat food, grow
+                longer, and avoid walls and yourself. Score tracking and
+                increasing difficulty. Built with canvas and
+                requestAnimationFrame.
+              </div>
+              <div class="full-tech">HTML5 Canvas, CSS, JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES start here -->
+      <section id="services">
+        <h2 class="section-title">What <span>I Do</span></h2>
+        <div class="services-grid reveal">
+          <div class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=100&h=100&fit=crop"
+              alt="Web Dev"
+              loading="lazy"
+            />
+            <h3>Frontend Web Development</h3>
+            <p>
+              I build interactive front‑end applications like calculators, music
+              players, and classic games using HTML, CSS, and JavaScript. All
+              projects are fully responsive.
+            </p>
+            <a
+              href="#projects"
+              class="service-inquire"
+              data-service="Frontend Web Development"
+              >view project</a
+            >
+          </div>
+          <div class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=100&h=100&fit=crop"
+              alt="UI/UX Design"
+              loading="lazy"
+            />
+            <h3>UI/UX Design</h3>
+            <p>
+              I design clean, user‑friendly interfaces – from interactive
+              calendars to music players – with a focus on intuitive layouts and
+              smooth interactions.
+            </p>
+            <a
+              href="#projects"
+              class="service-inquire"
+              data-service="UI/UX Design"
+              >View projects</a
+            >
+          </div>
+          <div class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=100&h=100&fit=crop"
+              alt="JavaScript Apps"
+              loading="lazy"
+            />
+            <h3>JavaScript Applications</h3>
+            <p>
+              I create dynamic, client‑side applications using vanilla
+              JavaScript and modern APIs. My projects include a snake game, a
+              calendar with events, and a custom audio player.
+            </p>
+            <a
+              href="#projects"
+              class="service-inquire"
+              data-service="JavaScript Applications"
+              >view project
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Services  end here -->
+
+    <!-- CONTACT  start-->
+    <div id="contact">
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <div class="contact-container">
+        <div class="contact-left">
+          <h3 class="section-title"><span>More</span></h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps?q=Addiss+Kidam+Town,Ethiopia&output=embed"
+              width="100%"
+              height="350"
+              style="border: 40"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+          <div id="formMessage"></div>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Your message here..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL for project details -->
+    <div class="modal" id="projectModal">
+      <div class="modal-content">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img
+          src="/WebSitepage/images/1.jpg"
+          alt=""
+          class="modal-img"
+          id="modalImg"
+          loading="lazy"
+        />
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-description" id="modalDesc"></div>
+        <div class="modal-tech" id="modalTech"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-links">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="links-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About Me</a></li>
+              <li><a href="#skills" class="footer-link">Skills</a></li>
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact" id="footer-contact">
+            <h4 class="footer-title">Contact Info</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📌</div>
+                <div class="contact-text">
+                  <h5>
+                    Location:
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Addiss+Kidam+,Ethiopia"
+                      target="_blank"
+                      >Addiss Kidam, Ethiopia</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div class="contact-text">
+                  <h5>
+                    Email:
+                    <a
+                      href="https://mail.google.com/mail/?view=cm&fs=1&to=tsegazeab860@gmail.com"
+                      target="_blank"
+                      >tsegazeab860@gmail.com</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-text">
+                  <h5>
+                    Phone: <a href="tel:+251970044044">+251 97 0044 044</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h2 class="section-title">Follow <span>Us</span></h2>
+          <div class="social-links">
+            <a
+              href="https://youtu.be/Zk1mofnSN0Y"
+              target="_blank"
+              class="social-link"
+              title="YouTube"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M21.582 6.186a2.506 2.506 0 0 0-1.768-1.768C18.254 4 12 4 12 4s-6.254 0-7.814.418a2.506 2.506 0 0 0-1.768 1.768C2 7.746 2 12 2 12s0 4.254.418 5.814a2.506 2.506 0 0 0 1.768 1.768C5.746 20 12 20 12 20s6.254 0 7.814-.418a2.506 2.506 0 0 0 1.768-1.768C22 16.254 22 12 22 12s0-4.254-.418-5.814zM9.846 15.146V8.854L15.692 12l-5.846 3.146z"
+                /></svg
+              ><span class="social-label">YouTube</span></a
+            >
+            <a
+              href="https://t.me/Tsegazeab2020"
+              target="_blank"
+              class="social-link"
+              title="Telegram"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.022c.242-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.656-.643.136-.953l11.57-4.461c.537-.196 1.006.128.832.941z"
+                /></svg
+              ><span class="social-label">Telegram</span></a
+            >
+            <a
+              href="https://www.instagram.com/mtsegaye030"
+              target="_blank"
+              class="social-link"
+              title="Instagram"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                /></svg
+              ><span class="social-label">Instagram</span></a
+            >
+            <a
+              href="https://www.facebook.com/tsegazeabfb"
+              target="_blank"
+              class="social-link"
+              title="Facebook"
+              ><svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                /></svg
+              ><span class="social-label">Facebook</span></a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            <p>&copy;Tsegaye Mekonnen. All rights are reserved.</p>
+            <p>Developed by Tsegaye</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
